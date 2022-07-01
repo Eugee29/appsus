@@ -1,0 +1,13 @@
+.filter-by {
+  padding: 2em;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2em;
+}
+
+@media screen and (min-width: 800px) {
+  .filter-by {
+    flex-direction: row;
+  }
+}

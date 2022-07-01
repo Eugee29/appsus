@@ -1,0 +1,38 @@
+.email-filter {
+  height: 100%;
+  display: flex;
+  order: 2;
+  width: 100%;
+}
+
+@media screen and (min-width: 800px) {
+  .email-filter {
+    order: 0;
+    width: 700px;
+  }
+}
+
+.email-filter input {
+  width: 100%;
+  border-radius: 10px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border: 1px solid var(--clr2);
+  border-inline-end: none;
+  padding: .625em;
+  outline: none;
+}
+
+.email-filter select {
+  border: 1px solid var(--clr2);
+  border-radius: 10px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  padding: .625em;
+  cursor: pointer;
+  outline: none;
+}
+
+.app-header .filter input {
+  padding: .625em;
+}

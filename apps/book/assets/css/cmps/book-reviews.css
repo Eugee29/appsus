@@ -1,0 +1,8 @@
+.book-reviews {
+  list-style: none;
+
+}
+
+.book-reviews li {
+  border-bottom: whitesmoke 1px solid;
+}

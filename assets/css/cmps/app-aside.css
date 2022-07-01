@@ -1,0 +1,63 @@
+.app-aside {
+  background-color: var(--bgclr);
+  height: 100%;
+  position: fixed;
+  z-index: 10;
+  top: 80px;
+  width: 75%;
+  padding-top: 1rem;
+}
+
+@media screen and (min-width:800px) {
+  .app-aside {
+    width: 256px;
+    top: 0;
+    padding-top: 70px;
+    left: unset
+  }
+}
+
+.app-aside.visible .page-cover {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.575);
+  left: 75%;
+}
+
+@media screen and (min-width:800px) {
+  .page-cover {
+    display: none;
+  }
+}
+
+.app-aside.hidden {
+  left: -100%;
+}
+
+@media screen and (min-width:800px) {
+  .app-aside.hidden {
+    left: 0;
+  }
+}
+
+.app-aside .menu-btn::before {
+  font-family: 'fa-solid';
+  content: '\f0c9';
+}
+
+
+.app-aside .menu-btn {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  position: fixed;
+  top: 32px;
+  left: 32px;
+}
+
+@media screen and (min-width: 800px) {
+  .app-aside .menu-btn {
+    display: none;
+  }
+}

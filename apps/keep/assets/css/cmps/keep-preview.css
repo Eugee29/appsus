@@ -1,0 +1,171 @@
+.keep {
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgb(175, 175, 175);
+  padding: 10px;
+  padding-bottom: 20px;
+  margin-inline-end: 10px;
+  margin-block-end: 10px;
+
+  max-height: 20vh;
+  min-height: 15vh;
+  box-sizing: content-box;
+
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+}
+
+.keep:hover{
+  box-shadow:inset 0 0 20px 5px rgb(65, 65, 65), 0 0 20px 0 rgb(65, 65, 65);
+}
+
+.keep h1 {
+  font-size: 1rem;
+  margin-bottom: 6px;
+  text-align: center;
+  position: relative;
+}
+
+.keep p {
+  font-size: 1rem;
+  /* margin-bottom: 25px; */
+  margin-top: 10px;
+  
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  flex-grow: 1;
+
+}
+
+.keep ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.edit-container {
+  position: relative;
+  align-self: flex-end;
+  width: 100%;
+  display: flex;
+  padding: 11px;
+  gap: 5px;
+  margin-bottom: -10px;
+
+  opacity: 0;
+
+  position: absolute;
+  bottom: 0;
+
+  transition: 0.5s;
+}
+
+.edit-container:hover {
+  opacity: 1;
+}
+
+.edit-container > * {
+  border: none;
+  background: none;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+}
+
+.edit-container .email-keep {
+  border: none;
+  margin: 0;
+  padding: 0;
+  background-color: inherit;
+}
+
+.edit-container .email-keep::before {
+  font-family: "fa-solid";
+  content: "\f0e0";
+  font-size: 20px;
+}
+
+.edit-container .bgc-edit-input {
+  position: absolute;
+  right: 0;
+  opacity: 0;
+}
+
+.edit-container .bgc-edit-input:hover {
+  cursor: pointer;
+}
+
+.edit-container .bgc-edit::before {
+  font-family: "fa-solid";
+  content: "\f53f";
+  font-size: 20px;
+}
+
+.keep .del-keep::before {
+  font-family: "fa-solid";
+  content: "\f1f8";
+  font-size: 20px;
+}
+
+iframe,
+.keep img {
+  max-width: 100%;
+  margin-top: -10px;
+  position: absolute;
+  right: 0;
+
+  border-radius: 10px 10px 0 0;
+
+  margin-bottom: 15px;
+
+  max-height: 60%;
+  object-fit: cover;
+}
+
+iframe + h1,
+.keep img + h1 {
+  position: relative;
+  bottom: -70%;
+}
+
+.keep .keep-todos input {
+  display: none;
+}
+
+.keep .keep-todos label:hover {
+  cursor: pointer;
+}
+
+.keep .keep-todos input:checked + label {
+  text-decoration: line-through;
+}
+
+.keep .more-less-btn{
+  border:none;
+  background-color: inherit;
+  border-radius: 5px;
+  margin:0;
+}
+
+.keep .more-less-btn:hover{
+  box-shadow:inset 0 0 5px 0, 0 0 5px 0;
+}
+
+.keep .more-less-btn label:hover{
+  cursor:pointer;
+}
+
+.keep .more-less-btn #show-long-txt{
+  display:none;
+}
+
+#show-long-txt:checked + div{
+  display:block;
+}
+
+@media screen and (max-width: 700px){
+  .edit-container{
+    opacity: 1;
+  }
+}

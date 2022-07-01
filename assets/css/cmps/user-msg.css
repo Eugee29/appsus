@@ -1,0 +1,39 @@
+.user-msg {
+  position: fixed;
+  bottom: 5%;
+  left: 5%;
+  background-color: var(--clr1);
+  border-radius: 1em;
+  width: 200px;
+  display: flex;
+  height: 60px;
+  padding: .625em;
+  padding-left: 1em;
+  padding-right: 1em;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 100;
+}
+
+.user-msg .msg {
+  font-size: 1rem;
+  color: var(--clr2);
+  font-weight: unset;
+}
+
+.user-msg .close {
+  background: none;
+  border: none;
+  color: var(--clr2);
+  border-radius: 50%;
+  padding: .625em;
+}
+
+.user-msg .close:hover {
+  background-color: var(--clr3);
+}
+
+.user-msg .close::before {
+  font-family: 'fa-solid';
+  content: '\58';
+}

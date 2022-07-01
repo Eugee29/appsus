@@ -1,0 +1,13 @@
+:root {
+  --bgclr: white;
+  --fontclr: rgb(32, 32, 32);
+
+  --clr1: rgb(32, 32, 32);
+  --clr2: lightgray;
+  --clr3: gray;
+  --clr4: rgba(242, 245, 245, 0.8);
+
+  --brndclr: #d93025;
+  --kpbrclr: #feefc3;
+  --brndclr2: #d9312544;
+}

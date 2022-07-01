@@ -1,0 +1,18 @@
+.email-sort {
+  display: flex;
+  gap: 1em;
+  border-block-end: 1px solid var(--clr2);
+  height: 3rem;
+  padding: 1em;
+}
+
+.email-sort>* {
+  background: none;
+  border: none;
+  color: var(--clr3);
+
+}
+
+.email-sort>*:hover {
+  color: var(--brndclr)
+}

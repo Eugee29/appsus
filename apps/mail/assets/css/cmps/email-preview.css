@@ -1,0 +1,143 @@
+.email-preview {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: .625em 1rem;
+  border-block-end: var(--clr2) 1px solid;
+  cursor: pointer;
+  color: var(--clr1);
+  white-space: nowrap;
+  gap: .625em;
+  width: 100%;
+  height: unset;
+}
+
+.email-preview>* {
+  font-size: .875rem;
+  z-index: 1;
+}
+
+@media screen and (min-width:800px) {
+  .email-preview {
+    flex-direction: row;
+    height: 40px;
+    align-content: center;
+  }
+}
+
+.email-preview:hover {
+  box-shadow: inset 1px 0 0 #dadce0, inset -1px 0 0 #dadce0, 0 1px 2px 0 rgb(60 64 67 / 30%), 0 1px 3px 1px rgb(60 64 67 / 15%);
+  position: relative;
+
+}
+
+.email-preview:hover .email-star {
+  color: var(--clr3);
+}
+
+.email-preview .btn-container {
+  display: none;
+  height: 100%;
+}
+
+@media screen and (min-width:800px) {
+  .email-preview:hover .btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .email-preview:hover .sent-at {
+    display: none;
+  }
+}
+
+.email-preview .btn-container>* {
+  background: none;
+  border: none;
+  color: var(--clr3);
+  font-size: 1rem;
+  height: 40px;
+  width: 40px;
+}
+
+.email-preview .btn-container>*:hover {
+  background-color: var(--clr2);
+  border-radius: 50%;
+}
+
+.email-preview .delete-btn::before {
+  font-family: 'fa-solid';
+  content: '\f1f8';
+}
+
+.email-preview .read-btn::before {
+  font-family: 'fa-solid';
+  content: '\f0e0';
+}
+
+.email-preview.read .read-btn::before {
+  font-family: 'fa-solid';
+  content: '\f2b6';
+}
+
+.email-preview .author-name {
+  max-width: 200px;
+
+  width: 100%;
+  text-overflow: ellipsis;
+
+}
+
+.email-preview.draft .author-name {
+  color: var(--brndclr);
+}
+
+.email-preview .subject {
+  /* font-size: 1rem; */
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.email-preview .body {
+  flex: 1;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  /* font-size: 1rem; */
+  font-weight: unset;
+  color: var(--clr3);
+  width: 100%;
+}
+
+.email-preview .sent-at {
+  position: absolute;
+  font-size: .75rem;
+  top: 5px;
+  right: 5px;
+}
+
+@media screen and (min-width:800px) {
+  .email-preview .sent-at {
+    position: static;
+    padding-inline-start: 1em;
+    /* font-size: .9em; */
+  }
+}
+
+@media screen and (min-width:800px) {
+  .email-preview .body::before {
+    content: '\00A0 - ';
+  }
+}
+
+.email-preview.unread {
+  background-color: var(--bgclr);
+}
+
+.email-preview.read {
+  background-color: var(--clr4);
+}
+
+.email-preview.read>* {
+  font-weight: unset;
+}

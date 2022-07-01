@@ -1,0 +1,74 @@
+.keep-add{
+  font-family: roboto;
+}
+
+.keep-add form {
+  position: relative;
+  max-width: 50%;
+  margin: 32px auto 50px auto;
+  background: #fff;
+  padding: 7px;
+  border-radius: 7px;
+  box-shadow: 0 1px 7px rgb(128, 128, 128);
+}
+
+.keep-add form input {
+  width: 100%;
+  border: none;
+  padding: 4px 10px;
+  margin-bottom: 20px;
+  outline: none;
+  font-size: 1rem;
+  resize: none;
+}
+
+.keep-add form textarea {
+  width: 100%;
+  border: none;
+  padding: 4px 10px;
+  outline: none;
+  font-size: 1rem;
+  resize: none;
+}
+
+.keep-add form .submit {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 18px;
+  bottom: -18px;
+  background: rgb(255, 200, 18);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  box-shadow: 0 1px 3px rgb(165, 165, 165);
+  cursor: pointer;
+  outline: none;
+
+}
+
+
+.keep-add form button:not(.submit){
+  border:none;
+  background-color: inherit;
+}
+
+.keep-add form .add-list::before{
+  font-family: "fa-solid";
+  content: "\f03a";
+  font-size: 20px;
+}
+.keep-add form .add-video::before{
+  font-family: "fa-solid";
+  content: "\f03d";
+  font-size: 20px;
+}
+
+.keep-add form .add-pic::before {
+  font-family: "fa-solid";
+  content: "\f03e";
+  font-size: 20px;
+}

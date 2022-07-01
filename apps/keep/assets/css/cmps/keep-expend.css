@@ -1,0 +1,30 @@
+.keep-modal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 10;
+    background-color: #fff;
+    box-shadow: 0 0 10px 0;
+    height: 20vh;
+    width:50vh;
+    border-radius: 20px;
+    padding: 10px;
+    display:grid;
+    place-content: center;
+    display: none;
+}
+
+.keep-modal span{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: inherit;
+    border: none;
+}
+
+.keep-modal span::before{
+    font-family: "fa-solid";
+  content: "\58";
+  font-size: 20px;
+}

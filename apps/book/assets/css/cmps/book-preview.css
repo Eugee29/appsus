@@ -1,0 +1,36 @@
+.book-preview {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    text-align: center;
+    padding: 1em;
+    cursor: pointer;
+    position: relative;
+    background-color: whitesmoke;
+    color: rgb(32, 32, 32);
+    border-radius: 10px;
+    height: 500px
+}
+
+.book-preview .sale {
+    background-color: yellow;
+    transform: rotate(30deg);
+    position: absolute;
+    right: -10%;
+    top: -3%;
+    padding: 2px;
+    border: 1px black solid;
+    border-radius: 5px;
+}
+
+.book-preview:hover {
+    box-shadow: 0px 0px 20px 2px orange;
+}
+
+.book-preview h1 {
+    font-size: 2em;
+}
+
+.book-preview h2 {
+    font-size: 1em;
+}

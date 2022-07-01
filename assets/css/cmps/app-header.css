@@ -1,0 +1,119 @@
+.app-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px var(--clr2) solid;
+  padding: .625em;
+  gap: .625em;
+  background-color: var(--bgclr);
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  height: 170px;
+
+}
+
+@media screen and (min-width: 800px) {
+  .app-header {
+    height: 70px;
+    flex-direction: row;
+    z-index: 100;
+  }
+}
+
+.app-header .logo {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  text-decoration: none;
+}
+
+.app-header .name {
+  color: var(--brndclr);
+
+}
+
+.app-header .drop-down {
+  position: relative;
+  font-size: 2rem;
+  height: 100%;
+  padding-left: 1em;
+  padding-right: 1em;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.app-header .drop-down::before {
+  font-family: 'fa-solid';
+  content: '\f142';
+}
+
+.app-header .drop-down-content {
+  display: none;
+  position: absolute;
+  transform: translateX(-100%);
+  left: 100%;
+  top: 100%;
+  background-color: var(--bgclr);
+  box-shadow: 0 0 8px 0 var(--clr3);
+  /* border-radius: 10px; */
+  height: 300px;
+  width: 100px;
+
+}
+
+@media screen and (min-width: 800px) {
+  .app-header .drop-down-content {
+    left: 100%;
+  }
+}
+
+
+.app-header .drop-down-content>* {
+  text-decoration: none;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--fontclr);
+  cursor: pointer;
+}
+
+.app-header .drop-down-content>*:hover {
+  background-color: var(--clr2);
+}
+
+.app-header .drop-down:hover .drop-down-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+  align-items: center;
+}
+
+.app-header .drop-down-content>*.active {
+  color: var(--brndclr);
+  cursor: default;
+  background-color: var(--brndclr2);
+}
+
+.app-header .home-link::before {
+  font-family: 'fa-solid';
+  content: '\f015';
+}
+
+.app-header .email-link::before {
+  font-family: 'fa-solid';
+  content: '\40';
+}
+
+.app-header .keep-link::before {
+  font-family: 'fa-solid';
+  content: '\f0eb';
+}
+
+.app-header .book-link::before {
+  font-family: 'fa-solid';
+  content: '\f02d';
+}

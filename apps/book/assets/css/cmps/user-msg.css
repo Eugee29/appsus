@@ -1,0 +1,19 @@
+.user-msg {
+  position: fixed;
+  top: 4%;
+  right: 4%;
+  background-color: whitesmoke;
+  color: rgb(32, 32, 32);
+  padding: 1em;
+  border-radius: 6rem;
+}
+
+.user-msg.success {
+  background-color: lightgreen;
+  color: rgb(32, 32, 32);
+}
+
+.user-msg.fail {
+  background-color: lightcoral;
+  color: whitesmoke;
+}

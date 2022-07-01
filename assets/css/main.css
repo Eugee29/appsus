@@ -1,0 +1,40 @@
+/* Basics */
+@import './basics/base.css';
+@import './basics/layout.css';
+@import './setup/vars.css';
+@import './setup/fonts.css';
+
+/* Appsus */
+@import '../css/pages/app-home.css';
+@import '../css/cmps/app-header.css';
+@import '../css/cmps/app-aside.css';
+@import '../css/cmps/app-footer.css';
+@import '../css//cmps/user-msg.css';
+
+/* Email App */
+@import '../../apps/mail/assets/css/pages/email-app.css';
+@import '../../apps/mail/assets/css/pages/email-details.css';
+@import '../../apps/mail/assets/css/cmps/email-list.css';
+@import '../../apps/mail/assets/css/cmps/email-star.css';
+@import '../../apps/mail/assets/css/cmps/email-filter.css';
+@import '../../apps/mail/assets/css/cmps/email-folder-list.css';
+@import '../../apps/mail/assets/css/cmps/email-compose.css';
+@import '../../apps/mail/assets/css/cmps/email-preview.css';
+@import '../../apps/mail/assets/css/cmps/email-sort.css';
+
+/* Keep App */
+@import '../../apps/keep/assets/css/keep-app.css';
+@import '../../apps/keep/assets/css/cmps/keep-preview.css';
+@import '../../apps/keep/assets/css/cmps/keep-sidebar.css';
+@import '../../apps/keep/assets/css/cmps/keep-expend.css';
+@import '../../apps/keep/assets/css/cmps/keep-add.css';
+
+/* Book App */
+@import '../../apps/book/assets/css/cmps/book-list.css';
+@import '../../apps/book/assets/css/cmps/book-preview.css';
+@import '../../apps/book/assets/css/pages/book-details.css';
+@import '../../apps/book/assets/css/cmps/filter-by.css';
+@import '../../apps/book/assets/css/cmps/review-add.css';
+@import '../../apps/book/assets/css/cmps/book-reviews.css';
+@import '../../apps/book/assets/css/cmps/book-add.css';
+@import '../../apps/book/assets/css/cmps/about.css';

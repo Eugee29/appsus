@@ -1,0 +1,11 @@
+.review-add {
+  margin-top: 2rem;
+  border-top: whitesmoke 2px solid;
+  border-bottom: whitesmoke 2px solid;
+}
+
+.review-add form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

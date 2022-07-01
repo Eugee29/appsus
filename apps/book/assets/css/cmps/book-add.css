@@ -1,0 +1,28 @@
+.book-add {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.book-add .books-suggestions {
+  position: absolute;
+  background-color: whitesmoke;
+  color: rgb(32, 32, 32);
+  top: 100%;
+  z-index: 10;
+}
+
+.books-suggestions ul {
+  list-style: none;
+}
+
+.books-suggestions button {
+  border: none;
+  background: none;
+  font-size: 1.5em;
+}
+
+.books-suggestions button:hover {
+  color: orange;
+}

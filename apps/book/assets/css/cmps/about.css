@@ -1,0 +1,13 @@
+.about nav {
+  display: flex;
+  gap: 4px;
+}
+
+.about nav>* {
+  text-decoration: none;
+  color: orange;
+}
+
+.about nav>*.active {
+  color: orangered;
+}

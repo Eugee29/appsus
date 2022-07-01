@@ -1,0 +1,31 @@
+.keep-app{
+    display: grid;
+    grid-template-rows: 0fr 1fr ;
+    max-width: 100%;
+}
+
+.keep-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10vw, 33%));
+}
+
+@media screen and (max-width: 700px){
+    body{
+        padding-left: 5px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .keep-container{
+        grid-template-columns: repeat(auto-fit, minmax(10vw, 45vw));
+        place-content:center;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    .keep-container{
+        grid-template-columns: repeat(auto-fit, minmax(5vw, 10vw));
+        place-content:center;
+    }
+}
+

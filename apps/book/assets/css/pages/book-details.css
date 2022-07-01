@@ -1,0 +1,58 @@
+.book-details {
+  text-align: center;
+  position: relative;
+}
+
+.book-details .go-back {
+  text-decoration: none;
+  color: orange;
+}
+
+.book-details nav {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 1rem;
+
+}
+
+.book-details nav>* {
+  text-decoration: none;
+  color: orange;
+}
+
+.book-details .sale {
+  color: orange;
+  font-weight: 1000px;
+}
+
+.book-details img {
+  height: 50vh;
+}
+
+.book-details h1 {
+  font-size: 4rem;
+}
+
+.book-details h2 {
+  font-size: 3rem;
+}
+
+.book-details h3 {
+  font-size: 2rem;
+}
+
+.book-details h3,
+h4,
+h5,
+h6 {
+  font-size: 1rem;
+}
+
+.book-details .cheap {
+  color: green;
+}
+
+.book-details .expensive {
+  color: red;
+}

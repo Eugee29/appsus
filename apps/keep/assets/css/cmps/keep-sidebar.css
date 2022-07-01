@@ -1,0 +1,35 @@
+
+
+.keep-nav {
+  display: flex;
+  flex-direction: column;
+  width: 256px;
+  gap: 2em;
+  padding: 1.625em;
+}
+
+.keep-nav .space-container{
+  height:50px;
+}
+.keep-nav .folder-nav{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 30%;
+  margin-left: -1.625em;
+}
+.keep-nav .folder-nav>*{
+  text-decoration: none;
+  color: var(--fontclr);
+  padding: .625em;
+  border-top-right-radius: 6rem;
+  border-bottom-right-radius: 6rem;
+}
+
+.keep-nav .folder-nav>*:hover{
+    cursor: pointer;
+    background-color: rgba(0,0,0,.2);
+}
+
+.keep-nav .folder-nav .active{
+  background-color: var(--kpbrclr);
+}

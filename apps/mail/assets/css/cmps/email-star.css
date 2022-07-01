@@ -1,0 +1,28 @@
+.email-star {
+  background: none;
+  border: none;
+  font-size: 1em;
+  border-radius: 50%;
+  padding: 0;
+  color: var(--clr2);
+  cursor: pointer;
+  width: 0px;
+}
+
+@media screen and (min-width:800px) {
+  .email-star {
+    width: unset
+  }
+}
+
+.email-star::before {
+  font-family: 'fa-regular';
+  content: '\f005';
+
+}
+
+.email-star.active::before {
+  font-family: 'fa-solid';
+  content: '\f005';
+  color: rgb(255, 210, 125);
+}

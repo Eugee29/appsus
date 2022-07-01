@@ -1,0 +1,85 @@
+.email-folder-list {
+  padding: 1.625em;
+  padding-block-start: 0;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 30%;
+  margin-left: -1.625em;
+}
+
+.email-folder-list .unread-count {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  right: 5%;
+  top: 50%;
+  font-size: .75rem;
+  color: var(--brndclr);
+}
+
+.email-folder-list>* {
+  text-decoration: none;
+  color: var(--fontclr);
+  border-top-right-radius: 6rem;
+  border-bottom-right-radius: 6rem;
+  position: relative;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  font-size: .875rem;
+  padding-left: 1.625rem;
+}
+
+.email-folder-list>*:hover {
+  background-color: var(--clr4);
+}
+
+.email-folder-list>*.active {
+  font-weight: bolder;
+  background-color: var(--brndclr2);
+  color: var(--brndclr);
+}
+
+.email-folder-list .icon {
+  width: 20px;
+  margin-right: 1.25rem;
+  font-size: 1rem;
+  color:
+    var(--clr3);
+}
+
+.email-folder-list .active .icon {
+  color: var(--brndclr);
+}
+
+.email-folder-list .inbox .icon::before {
+  font-family: 'fa-solid';
+  content: '\f01c';
+  padding: 0;
+
+}
+
+.email-folder-list .starred .icon::before {
+  font-family: 'fa-solid';
+  content: '\f005';
+}
+
+.email-folder-list .draft .icon::before {
+  font-family: 'fa-solid';
+  content: '\f15b';
+}
+
+
+.email-folder-list .sent .icon::before {
+  font-family: 'fa-solid';
+  content: '\f064';
+}
+
+.email-folder-list .trash .icon::before {
+  font-family: 'fa-solid';
+  content: '\f1f8';
+}
+
+.email-folder-list .all-mail .icon::before {
+  font-family: 'fa-solid';
+  content: '\f0e0';
+}
